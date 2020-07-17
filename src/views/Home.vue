@@ -24,13 +24,16 @@
       <a-layout-sider width="200" style="background: #fff">
         <a-menu
           mode="inline"
-          :default-selected-keys="['1']"
-          :default-open-keys="['sub1']"
+          theme="dark"
+          :default-selected-keys="['0']"  
           :style="{ height: '100%', borderRight: 0 }"
         >
+          <a-menu-item key="0" >
+              首页
+            </a-menu-item>
           <a-sub-menu key="sub1">
             <span slot="title"><a-icon type="user" />Navigation</span>
-            <a-menu-item key="1">
+            <a-menu-item key="1" >
               面包屑
             </a-menu-item>
             <a-menu-item key="2">
@@ -79,14 +82,14 @@
       <a-layout style="padding: 0 24px 24px">
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item>Home</a-breadcrumb-item>
-          <a-breadcrumb-item>List</a-breadcrumb-item>
-          <a-breadcrumb-item>App</a-breadcrumb-item>
         </a-breadcrumb>
         <!-- 卡片区域 -->
         <a-layout-content
-          :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
+          :style="{ background: '#fff', padding: '24px 90px', margin: 0, minHeight: '280px' }"
         >
-          Content
+          <img src="../assets/antd.png" alt="antd">
+          <img src="../assets/vue.png" alt="antd">
+          <img src="../assets/antd.png" alt="antd">
         </a-layout-content>
       </a-layout>
     </a-layout>
@@ -103,6 +106,9 @@ export default {
 </script>
 
 <style>
+.ant-layout{
+  height: 100%;
+}
 #components-layout-demo-top-side-2 .logo {
   width: 120px;
   height: 31px;
