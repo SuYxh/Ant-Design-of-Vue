@@ -20,6 +20,7 @@
       </a-menu>
     </a-layout-header>
     <a-layout>
+      <!-- 侧边栏 -->
       <a-layout-sider width="200" style="background: #fff">
         <a-menu
           mode="inline"
@@ -28,22 +29,22 @@
           :style="{ height: '100%', borderRight: 0 }"
         >
           <a-sub-menu key="sub1">
-            <span slot="title"><a-icon type="user" />subnav 1</span>
+            <span slot="title"><a-icon type="user" />Navigation</span>
             <a-menu-item key="1">
-              option1
+              面包屑
             </a-menu-item>
             <a-menu-item key="2">
-              option2
+              下拉菜单
             </a-menu-item>
             <a-menu-item key="3">
-              option3
+              分页
             </a-menu-item>
             <a-menu-item key="4">
-              option4
+              步骤条
             </a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="sub2">
-            <span slot="title"><a-icon type="laptop" />subnav 2</span>
+            <span slot="title"><a-icon type="laptop" />表单</span>
             <a-menu-item key="5">
               option5
             </a-menu-item>
@@ -58,7 +59,7 @@
             </a-menu-item>
           </a-sub-menu>
           <a-sub-menu key="sub3">
-            <span slot="title"><a-icon type="notification" />subnav 3</span>
+            <span slot="title"><a-icon type="notification" />表格</span>
             <a-menu-item key="9">
               option9
             </a-menu-item>
@@ -74,12 +75,14 @@
           </a-sub-menu>
         </a-menu>
       </a-layout-sider>
+      <!-- 面包屑 -->
       <a-layout style="padding: 0 24px 24px">
         <a-breadcrumb style="margin: 16px 0">
           <a-breadcrumb-item>Home</a-breadcrumb-item>
           <a-breadcrumb-item>List</a-breadcrumb-item>
           <a-breadcrumb-item>App</a-breadcrumb-item>
         </a-breadcrumb>
+        <!-- 卡片区域 -->
         <a-layout-content
           :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
